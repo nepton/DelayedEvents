@@ -25,6 +25,8 @@ before_build:
 
 build_script:
 - cmd: >-
+    dotnet pack .\src\DelayedEvents -c %TARGET_CONFIGURATION% -p:VersionPrefix=%VERSION%
+
     dotnet pack .\src\DelayedEvents.Abstractions -c %TARGET_CONFIGURATION% -p:VersionPrefix=%VERSION%
     
     dotnet pack .\src\DelayedEvents.RabbitMq -c %TARGET_CONFIGURATION% -p:VersionPrefix=%VERSION%
