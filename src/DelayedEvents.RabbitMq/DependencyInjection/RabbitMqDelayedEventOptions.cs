@@ -2,7 +2,7 @@
 namespace DelayedEvents.RabbitMq.DependencyInjection;
 
 /// <summary>
-/// Rabbit mq 的配置参数
+/// Rabbit mq options for integration events
 /// </summary>
 public class RabbitMqDelayedEventOptions
 {

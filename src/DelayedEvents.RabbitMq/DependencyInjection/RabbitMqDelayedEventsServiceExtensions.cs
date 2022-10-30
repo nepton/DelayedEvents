@@ -8,17 +8,17 @@ using RabbitMQ.Client;
 namespace DelayedEvents.RabbitMq.DependencyInjection;
 
 /// <summary>
-/// 配置使用 RabbitMQ 作为事件总线
+/// Configure to use RabbitMQ as the event bus
 /// </summary>
-public static class RabbitMqDelayedEventBusServiceExtensions
+public static class RabbitMqDelayedEventsServiceExtensions
 {
     /// <summary>
-    /// 配置使用 RabbitMQ 作为事件总线
+    /// Configure to use RabbitMQ as the event bus
     /// </summary>
     /// <param name="services"></param>
     /// <param name="configuration"></param>
     /// <returns></returns>
-    public static IServiceCollection AddCustomRabbitMqEventBus(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddDelayedEventsUsingRabbitMq(this IServiceCollection services, IConfiguration configuration)
     {
         var options = configuration.Get<RabbitMqDelayedEventOptions>();
         services.AddSingleton<IRabbitMqPersistentConnection>(sp =>
@@ -45,7 +45,6 @@ public static class RabbitMqDelayedEventBusServiceExtensions
             var logger                       = sp.GetRequiredService<ILogger<RabbitMqDelayedEventBus>>();
             var eventBusSubscriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
 
-            // todo 调整代码, 使用容器创建
             return new RabbitMqDelayedEventBus(rabbitMqPersistentConnection,
                 logger,
                 iLifetimeScope,
