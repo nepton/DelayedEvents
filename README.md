@@ -1,5 +1,5 @@
 # DelayedEvents
-[![Build status](https://ci.appveyor.com/api/projects/status/rdai4o302paf94fe?svg=true)](https://ci.appveyor.com/project/nepton/DelayedEvents)
+[![Build status](https://ci.appveyor.com/api/projects/status/bla0jjaxce1roxfv?svg=true)](https://ci.appveyor.com/project/nepton/delayedevents)
 [![CodeQL](https://github.com/nepton/DelayedEvents/actions/workflows/codeql.yml/badge.svg)](https://github.com/nepton/DelayedEvents/actions/workflows/codeql.yml)
 ![GitHub issues](https://img.shields.io/github/issues/nepton/DelayedEvents.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nepton/DelayedEvents/blob/master/LICENSE)
