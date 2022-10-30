@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DelayedEvents;
+namespace DelayedEvents.RabbitMq;
 
 public interface IEventBusSubscriptionsManager
 {

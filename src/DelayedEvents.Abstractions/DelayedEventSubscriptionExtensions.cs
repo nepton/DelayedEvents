@@ -7,7 +7,7 @@ public static class DelayedEventSubscriptionExtensions
     /// </summary>
     /// <typeparam name="TEvent"></typeparam>
     /// <typeparam name="TEventHandler"></typeparam>
-    public static void Subscribe<TEvent, TEventHandler>(this IDelayedEventSubscriber source) where TEvent : DelayedEvent where TEventHandler : IDelayedEventHandler<TEvent>
+    public static void Subscribe<TEvent, TEventHandler>(this IDelayedEventBus source) where TEvent : DelayedEvent where TEventHandler : IDelayedEventHandler<TEvent>
     {
         source.Subscribe(typeof(TEvent), typeof(TEventHandler));
     }
@@ -16,7 +16,7 @@ public static class DelayedEventSubscriptionExtensions
     /// Simplify the subscription process
     /// </summary>
     /// <typeparam name="TEvent"></typeparam>
-    public static void Subscribe<TEvent>(this IDelayedEventSubscriber source) where TEvent : DelayedEvent
+    public static void Subscribe<TEvent>(this IDelayedEventBus source) where TEvent : DelayedEvent
     {
         source.Subscribe(typeof(TEvent), typeof(IDelayedEventHandler<>).MakeGenericType(typeof(TEvent)));
     }
@@ -26,7 +26,7 @@ public static class DelayedEventSubscriptionExtensions
     /// </summary>
     /// <typeparam name="TEvent"></typeparam>
     /// <typeparam name="TEventHandler"></typeparam>
-    public static void Unsubscribe<TEvent, TEventHandler>(this IDelayedEventSubscriber source) where TEventHandler : IDelayedEventHandler<TEvent> where TEvent : DelayedEvent
+    public static void Unsubscribe<TEvent, TEventHandler>(this IDelayedEventBus source) where TEventHandler : IDelayedEventHandler<TEvent> where TEvent : DelayedEvent
     {
         source.Unsubscribe(typeof(TEvent), typeof(TEventHandler));
     }

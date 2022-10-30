@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DelayedEvents;
+namespace DelayedEvents.RabbitMq;
 
 public partial class InMemoryEventBusSubscriptionsManager : IEventBusSubscriptionsManager
 {

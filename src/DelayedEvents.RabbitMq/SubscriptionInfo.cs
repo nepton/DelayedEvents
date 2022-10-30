@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DelayedEvents;
+namespace DelayedEvents.RabbitMq;
 
 public class SubscriptionInfo
 {

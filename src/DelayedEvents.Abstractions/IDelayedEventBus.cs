@@ -3,8 +3,14 @@ namespace DelayedEvents;
 /// <summary>
 /// The event subscriber interface
 /// </summary>
-public interface IDelayedEventSubscriber
+public interface IDelayedEventBus
 {
+    /// <summary>
+    /// Publishes the specified event.
+    /// </summary>
+    /// <param name="e"></param>
+    void Publish(DelayedEvent e);
+
     /// <summary>
     /// Adds subscriptions by type name
     /// </summary>
