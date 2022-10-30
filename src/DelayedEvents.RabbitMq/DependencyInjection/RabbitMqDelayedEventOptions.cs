@@ -2,37 +2,37 @@
 namespace DelayedEvents.RabbitMq.DependencyInjection;
 
 /// <summary>
-/// Rabbit mq options for integration events
+/// Rabbit mq options for delayed events
 /// </summary>
 public class RabbitMqDelayedEventOptions
 {
     /// <summary>
-    /// Rabbitmq 主机名
+    /// Rabbitmq hostName
     /// </summary>
     public string? Host { get; set; }
 
     /// <summary>
-    /// 用户名
+    /// The user name used to login rabbitmq
     /// </summary>
     public string? Username { get; set; }
 
     /// <summary>
-    /// 密码
+    /// password used to login rabbitmq
     /// </summary>
     public string? Password { get; set; }
 
     /// <summary>
-    /// 在 RabbitMq 中的 broker name
+    /// broker name in RabbitMq
     /// </summary>
     public string? BrokerName { get; set; }
 
     /// <summary>
-    /// 消息发送重试次数
+    /// Number of message sending retries
     /// </summary>
     public int RetryCount { get; set; } = 5;
 
     /// <summary>
-    /// 消息订阅的客户端名
+    /// The name of the client to which the message is subscribed
     /// </summary>
     public string? ClientName { get; set; }
 }

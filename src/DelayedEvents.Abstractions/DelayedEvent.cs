@@ -1,7 +1,7 @@
 namespace DelayedEvents;
 
 /// <summary>
-/// Delayed integration event
+/// Delayed event
 /// NOTE, not all implementations support this property
 /// </summary>
 public record DelayedEvent

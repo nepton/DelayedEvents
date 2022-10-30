@@ -17,11 +17,11 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <PackageId>IntegrationEvents.RabbitMq</PackageId>
-        <Description>Integration event bus for comm across microservices</Description>
-        <PackageTags>integration;event;bus;microservices</PackageTags>
-        <PackageProjectUrl>https://github.com/nepton/IntegraionEvents</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/nepton/IntegraionEvents.git</RepositoryUrl>
+        <PackageId>DelayedEvents.RabbitMq</PackageId>
+        <Description>Delayed event bus for some delayed hanlding business</Description>
+        <PackageTags>delayed;event;bus;microservices;message</PackageTags>
+        <PackageProjectUrl>https://github.com/nepton/DelayedEvents</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nepton/DelayedEvents.git</RepositoryUrl>
 
         <Authors>Nepton Liu</Authors>
         <PackageIcon>icon.png</PackageIcon>

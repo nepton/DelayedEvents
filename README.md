@@ -22,7 +22,7 @@ Add following nuget reference in business project:
 PM> Install-Package DelayedEvents.Abstractions
 ```
 
-And add following nuget reference in integration project:
+And add following nuget reference in main project:
 
 ``` 
 PM> Install-Package DelayedEvents.RabbitMq
